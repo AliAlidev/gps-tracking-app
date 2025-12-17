@@ -6,7 +6,7 @@ workflows:
     environment:
       groups:
         - keystore_credentials
-      flutter: "3.19.0"
+      flutter: "3.16.9"
       xcode: latest
       cocoapods: default
     scripts:
