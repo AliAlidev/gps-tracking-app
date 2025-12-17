@@ -27,7 +27,7 @@ dependencies:
   # Location & Background
   geolocator: ^10.1.0
   geolocator_platform_interface: ^4.2.6
-  workmanager: ^0.5.2+2
+  workmanager: ^0.9.0+3
   location: ^5.0.3
   
   # UI
