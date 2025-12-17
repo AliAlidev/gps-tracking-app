@@ -119,10 +119,8 @@ class LocationService {
     _lastPositionTime = DateTime.now();
 
     // Get network type
-    List<ConnectivityResult> connectivityResult = await _connectivity.checkConnectivity();
-    String networkType = connectivityResult.isEmpty 
-        ? 'none' 
-        : connectivityResult.first.toString().split('.').last;
+    ConnectivityResult connectivityResult = await _connectivity.checkConnectivity();
+    String networkType = connectivityResult.toString().split('.').last;
 
     // Get device info
     final deviceService = DeviceService();
@@ -175,11 +173,10 @@ class LocationService {
       if (unsyncedPoints.isEmpty) return;
 
       // Check connectivity
-      List<ConnectivityResult> connectivityResult = 
+      ConnectivityResult connectivityResult = 
           await _connectivity.checkConnectivity();
       
-      if (connectivityResult.isEmpty || 
-          connectivityResult.first == ConnectivityResult.none) {
+      if (connectivityResult == ConnectivityResult.none) {
         return; // No internet connection
       }
 

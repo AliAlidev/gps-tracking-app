@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class AdvertisementModel {
   final int id;
   final String title;
