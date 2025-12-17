@@ -1,0 +1,77 @@
+name: gps_tracking_app
+description: GPS tracking app with advertisement management
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Networking
+  http: ^1.1.0
+  dio: ^5.4.0
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  path: ^2.1.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Location & Background
+  geolocator: ^10.1.0
+  geolocator_platform_interface: ^2.3.0
+  workmanager: ^0.5.2
+  location: ^5.0.3
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  flutter_launcher_icons: ^0.13.1
+  
+  # QR Code
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  image_picker: ^1.0.5
+  
+  # Charts
+  fl_chart: ^0.65.0
+  
+  # Utils
+  intl: ^0.18.1
+  uuid: ^4.2.1
+  device_info_plus: ^9.1.1
+  battery_plus: ^5.0.2
+  connectivity_plus: ^5.0.2
+  permission_handler: ^11.1.0
+  flutter_local_notifications: ^16.3.0
+  
+  # JWT
+  jwt_decoder: ^2.0.1
+  
+  # PDF Export
+  pdf: ^3.10.7
+  printing: ^5.12.0
+  
+  # CSV Export
+  csv: ^5.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+
