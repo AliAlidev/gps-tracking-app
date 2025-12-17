@@ -50,7 +50,7 @@ dependencies:
   battery_plus: ^5.0.2
   connectivity_plus: ^5.0.2
   permission_handler: ^11.1.0
-  flutter_local_notifications: ^16.3.0
+  flutter_local_notifications: ^17.2.0
   
   # JWT
   jwt_decoder: ^2.0.1
